@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="device-width=width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Gamer Survey</title>
+    </head>
+    <body>
+        <div class="menu">
+            <h1 id="title">Gamer Survey</h1>
+            <p id="description">Welcome gamers! Thank you for taking the time to answer this survey.</p>
+            <form id="survey-form" method="post" action="">
+                <fieldset>
+                    <label for="name" id="name-label">Name: 
+                        <input name="name" id="name" type="text" placeholder="Enter your name here" required>
+                    </label>
+                    <label for="email" id="email-label">Email: 
+                        <input name="email" id="email" type="email" placeholder="Enter your email here" required>
+                    </label>
+                    <label for="number" id="number-label">Age (Optional): 
+                        <input name="age" id="number" type="number" min="10" max="120" placeholder="Age">
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>What type of Gamer are you?</legend>
+                    <label for="casual-gamer"><input class="inline" id="casual-gamer" name="gamer-type" type="radio" value="CASUAL" checked>Casual</label>
+                    <label for="hardcore-gamer"><input class="inline" id="hardcore-gamer" name="gamer-type" type="radio" value="HARDCORE" >Hardcore</label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="dropdown">What is your preferred gaming system?
+                        <select id="dropdown">
+                            <option value="">(select one)</option>
+                            <option value="PC">PC</option>
+                            <option value="Playstation">Playstation</option>
+                            <option value="Xbox">Xbox</option>
+                            <option value="Nintendo">Nintendo Switch</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What genres of games do you play?</legend>
+                    <label for="FPS"><input id="FPS" class="inline" name="game-genre" type="checkbox" value="FPS">First Person Shotters</label>
+                    <label for="RPG"><input id="RPG" class="inline" name="game-genre" type="checkbox" value="RPG">Role Playing Games</label>
+                    <label for="Moba"><input id="Moba" class="inline" name="game-genre" type="checkbox" value="Moba">Mobas</label>
+                    <label for="Fighting"><input id="Fighting" class="inline" name="game-genre" type="checkbox" value="Fighting">Fighting Games</label>
+                    <label for="Racing"><input id="Racing" class="inline" name="game-genre" type="checkbox" value="Racing">Racing Games</label>
+                    <label for="MMO"><input id="MMO" class="inline" name="game-genre" type="checkbox" value="MMO">Massive Multiplayer Online Games</label>
+                    <label for="Other"><input id="Other" class="inline" name="game-genre" type="checkbox" value="Other"><input id="Other-text" type="text" placeholder="Other" class="inline"></label>
+                </fieldset>
+
+                <label for="textarea">Anything you want to add?
+                    <textarea id="textarea" placeholder="Very nice survey..."></textarea>
+                </label>
+                <label for="submit">
+                    <input id="submit" type="submit">
+                </label>
+
+
+            </form>
+        </div>
+
+    </body>
+</html>
